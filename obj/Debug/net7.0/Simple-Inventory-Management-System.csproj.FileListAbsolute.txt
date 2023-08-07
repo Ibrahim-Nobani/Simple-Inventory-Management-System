@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\bin\Debug\net7.0\Simple-Inventory-Management-System.exe
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\bin\Debug\net7.0\Simple-Inventory-Management-System.deps.json
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\bin\Debug\net7.0\Simple-Inventory-Management-System.runtimeconfig.json
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\bin\Debug\net7.0\Simple-Inventory-Management-System.dll
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\bin\Debug\net7.0\Simple-Inventory-Management-System.pdb
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.AssemblyInfo.cs
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.dll
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\refint\Simple-Inventory-Management-System.dll
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.pdb
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\Simple-Inventory-Management-System.genruntimeconfig.cache
+C:\Users\hp\Desktop\Internship\SimpleInventory\Simple-Inventory-Management-System\obj\Debug\net7.0\ref\Simple-Inventory-Management-System.dll
