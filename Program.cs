@@ -45,6 +45,13 @@ namespace SimpleInventory
                 {
                     inventory.ViewAllProducts();
                 }
+                else if (choice == 5)
+                {
+                    Console.WriteLine("Enter the product name you are looking for:");
+                    string name = Console.ReadLine();
+                    inventory.SearchProduct(name);
+
+                }
                 else if (choice == 6)
                 {
                     Console.WriteLine("Getting the Fuck out");
