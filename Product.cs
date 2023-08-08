@@ -7,7 +7,7 @@ public class Product
         return name;
     }
 
-    private void SetName(string value)
+    public void SetName(string value)
     {
         name = value;
     }

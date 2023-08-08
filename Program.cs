@@ -45,6 +45,11 @@ namespace SimpleInventory
                 {
                     inventory.ViewAllProducts();
                 }
+                else if (choice == 3){
+                    Console.WriteLine("Enter the product name you wish to modify: ");
+                    string name = Console.ReadLine();
+                    inventory.EditProduct(name);
+                }
                 else if (choice == 5)
                 {
                     Console.WriteLine("Enter the product name you are looking for:");
