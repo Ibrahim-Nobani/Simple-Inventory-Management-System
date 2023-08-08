@@ -64,7 +64,7 @@ namespace SimpleInventory
                 }
                 else if (choice == 6)
                 {
-                    Console.WriteLine("Getting the Fuck out");
+                    Console.WriteLine("Exiting");
                     return;
                 }
                 else
