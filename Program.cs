@@ -50,6 +50,11 @@ namespace SimpleInventory
                     string name = Console.ReadLine();
                     inventory.EditProduct(name);
                 }
+                else if (choice == 4){
+                    Console.WriteLine("Enter the product name you wish to delete: ");
+                    string name = Console.ReadLine();
+                    inventory.DeleteProduct(name);
+                }
                 else if (choice == 5)
                 {
                     Console.WriteLine("Enter the product name you are looking for:");
