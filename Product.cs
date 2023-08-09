@@ -1,15 +1,11 @@
 public class Product
 {
-    private string name;
+    private string _name;
 
-    public string GetName()
+    public string Name
     {
-        return name;
-    }
-
-    public void SetName(string value)
-    {
-        name = value;
+        get { return _name; }
+        set { _name = value; }
     }
 
     public decimal Price { get; set; }
@@ -17,7 +13,7 @@ public class Product
 
     public Product(string name, decimal price, int quantity)
     {
-        SetName(name);
+        Name = name;
         Price = price;
         Quantity = quantity;
     }
