@@ -13,16 +13,17 @@ namespace SimpleInventory
             Products.Add(product);
         }
 
-        public void DeleteProduct(string name)
+        public bool DeleteProduct(string name)
         {
             Product product = RetrieveProduct(name);
             if (product != null)
             {
                 Products.Remove(product);
-                Console.WriteLine("The product has been deleted!");
+                return true;
             }
+            return false;
         }
-        
+
         public void EditProduct(Product product, string newName, decimal newPrice, int newQuantity)
         {
             product.Name = newName;
