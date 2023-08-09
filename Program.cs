@@ -43,24 +43,21 @@ namespace SimpleInventory
                 }
                 else if (choice == 2)
                 {
-                    inventory.ViewAllProducts();
+                    ViewAllProducts(inventory);
                 }
-                else if (choice == 3){
-                    Console.WriteLine("Enter the product name you wish to modify: ");
-                    string name = Console.ReadLine();
-                    inventory.EditProduct(name);
+                else if (choice == 3)
+                {
+                    EditProductDetails(inventory);
                 }
-                else if (choice == 4){
+                else if (choice == 4)
+                {
                     Console.WriteLine("Enter the product name you wish to delete: ");
                     string name = Console.ReadLine();
                     inventory.DeleteProduct(name);
                 }
                 else if (choice == 5)
                 {
-                    Console.WriteLine("Enter the product name you are looking for:");
-                    string name = Console.ReadLine();
-                    inventory.SearchProduct(name);
-
+                    SearchProduct(inventory);
                 }
                 else if (choice == 6)
                 {
@@ -74,7 +71,47 @@ namespace SimpleInventory
 
                 Console.WriteLine();
             }
+
+            void ViewAllProducts(Inventory inventory)
+            {
+                foreach (var product in inventory.RetrieveAllProducts())
+                {
+                    Console.WriteLine($"{product.Name}, Price: {product.Price}, Quantity: {product.Quantity}");
+                }
+            }
+
+            void EditProductDetails(Inventory inventory)
+            {
+                Console.WriteLine("Enter the product name you wish to modify: ");
+                string name = Console.ReadLine();
+                Product product = inventory.RetrieveProduct(name);
+                if (product != null)
+                {
+                    Console.WriteLine("Enter The new Product name: ");
+                    string newName = Console.ReadLine();
+                    Console.WriteLine("Enter the new Product price: ");
+                    decimal newPrice = decimal.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the new Product quantity: ");
+                    int newQuantity = int.Parse(Console.ReadLine());
+                    inventory.EditProduct(product, newName, newPrice, newQuantity);
+                }
+            }
+
+            void SearchProduct(Inventory inventory)
+            {
+                Console.WriteLine("Enter the product name you are looking for:");
+                string name = Console.ReadLine();
+                var product = inventory.RetrieveProduct(name);
+                if (product != null)
+                {
+                    Console.WriteLine($"The product {product.Name} exists!");
+                }
+                else
+                {
+                    Console.WriteLine("The product does not exist!");
+                }
+
+            }
         }
     }
-
 }

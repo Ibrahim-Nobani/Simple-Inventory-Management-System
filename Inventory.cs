@@ -2,60 +2,49 @@ namespace SimpleInventory
 {
     public class Inventory
     {
-        public List<Product> products;
+        public List<Product> Products;
         public Inventory()
         {
-            products = new List<Product>();
+            Products = new List<Product>();
         }
 
         public void AddProduct(Product product)
         {
-            products.Add(product);
+            Products.Add(product);
         }
-        public void DeleteProduct (string name){
-            Product product = SearchProduct(name);
-            if (product != null){
-                products.Remove(product);
+
+        public void DeleteProduct(string name)
+        {
+            Product product = RetrieveProduct(name);
+            if (product != null)
+            {
+                Products.Remove(product);
                 Console.WriteLine("The product has been deleted!");
             }
         }
-        public void EditProduct(String name)
+        
+        public void EditProduct(Product product, string newName, decimal newPrice, int newQuantity)
         {
-            Product product = SearchProduct(name);
-            if (product != null)
-            {
-                Console.WriteLine("Enter The new Product name: ");
-                string newName = Console.ReadLine();
-                Console.WriteLine("Enter the new Product price: ");
-                decimal newPrice = decimal.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the new Product quantity: ");
-                int newQuantity = int.Parse(Console.ReadLine());
-                product.SetName(newName);
-                product.Price = newPrice;
-                product.Quantity = newQuantity;
-                //Console.WriteLine($"{product.GetName()}, Price: {product.Price}, Quantity: {product.Quantity}");
-            }
+            product.Name = newName;
+            product.Price = newPrice;
+            product.Quantity = newQuantity;
         }
-        public Product SearchProduct(String name)
+
+        public Product RetrieveProduct(String name)
         {
-            foreach (Product product in products)
+            foreach (var product in Products)
             {
-                if (product.GetName().Equals(name))
+                if (product.Name.Equals(name))
                 {
-                    Console.WriteLine("The product you are looking for exists!");
                     return product;
                 }
             }
-            Console.WriteLine("The product you are looking is no where to be found!");
             return null;
         }
 
-        public void ViewAllProducts()
+        public List<Product> RetrieveAllProducts()
         {
-            foreach (Product product in products)
-            {
-                Console.WriteLine($"{product.GetName()}, Price: {product.Price}, Quantity: {product.Quantity}");
-            }
+            return Products;
         }
     }
 }
